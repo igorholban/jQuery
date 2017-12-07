@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>jQuery</title>
+    <script src="js\js.js"></script>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <h1>Click the Bubles</h1>
+
+    <div id="circle"></div>
+    <div id="doi"></div>
+    <div id="trei"></div>
+    <p class="stema"></p>
+    <script>
+        $("#circle").click(function() {
+            $("#circle").animate({
+                opacity: 0.3,
+                height: "500px",
+                left: "600px",
+                width: "300px",
+                borderRadius: "0px"
+            }, 3000, function() {
+                $("#circle").animate({
+                    opacity: 1,
+                    top: "300px",
+                    borderRadius: "0px"
+                }, 2000, function() {
+                    $("#circle").animate({
+                        top: "100px"
+                    }, 2000, function() {
+                        $("#circle").animate({
+                            margin: "0px",
+                            left: "300px"
+                        }, 2000)
+                        $("#circle").css("backgroundColor", "blue");
+                    })
+                })
+            });
+        });
+        $("#doi").click(function() {
+            $("#doi").animate({
+                opacity: 0.3,
+                height: "500px",
+                left: "600px",
+                width: "300px",
+                borderRadius: "0px"
+            }, 3000, function() {
+                $("#doi").animate({
+                    opacity: 1,
+                    top: "300px",
+                    borderRadius: "0px"
+                }, 2000, function() {
+                    $("#doi").animate({
+                        top: "300px"
+                    }, 2000, function() {
+                        $("#doi").animate({
+                            margin: "0px",
+                            top: "100px",
+                            left: "600px"
+                        }, 2000);
+                        $("#doi").css("backgroundColor",
+                            "yellow");
+                    })
+                })
+            });
+        });
+        $("#trei").click(function() {
+            $("#trei").animate({
+                opacity: 0.3,
+                height: "500px",
+                left: "600px",
+                width: "300px",
+                borderRadius: "0px"
+            }, 3000, function() {
+                $("#trei").animate({
+                    opacity: 1,
+                    top: "400px",
+                    borderRadius: "0px"
+                }, 2000, function() {
+                    $("#trei").animate({
+                        top: "-300px"
+                    }, 2000, function() {
+                        $("#trei").animate({
+                            margin: "0px",
+                            top: "100px",
+                            left: "900px"
+                        }, 2000);
+                        $("#trei").css("backgroundColor",
+                            "red");
+                    })
+                })
+            });
+        });
+
+        $(".stema").click(function() {
+            $(".stema").animate({
+                padding: "20px",
+                width: "200px",
+                height: "200px",
+                left: "630px"
+
+            }, 2000)
+
+        });
+    </script>
+
+    <!-- <p class="text">hello toooggglle</p>
+    <button class="btn1">Fade in</button>
+    <script>
+        $("button").click(function() {
+            $("p").fadeToggle("slow");
+        })
+    </script>
+
+    <div class="container">
+        <button class="btn btn-primary btn-lg btn-block btnblock">TOGGLE</button>
+        <button class="btn btn-primary btn-lg btn-block" id="btn5">FADE OUT ALL</button>
+        <div class="row">
+
+            <div class="col-4">
+                <div class="card" id="card1" style="width: 20rem;">
+                    <img class="card-img-top img-fluid" src="img\1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Gamble</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" id="btn1">FADE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" id="card2" style="width: 20rem;">
+                    <img class="card-img-top img-fluid" src="img\2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Smile</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-success" id="btn2">TOOGLE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" id="changeme">
+                <div class="card" id="card3" style="width: 20rem;">
+                    <img class="card-img-top img-fluid" src="img\3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Stand out from Crowd</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning" id="btn3">RESIZE BIG</a>
+                        <a href="#" class="btn btn-warning" id="btn4">RESIZE SMALL</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+
+    <script type="text/javascript">
+        // $("#btn5").click(function() {
+        //     $(".card").fadeOut("slow");
+        // })
+        // $(".btnblock").click(function() {
+        //     $(".card").toggle("slow");
+        // })
+        // $("#btn1").click(function() {
+        //     $("#card1").fadeOut("slow");
+        // })
+        // $("#btn2").click(function() {
+        //     $("#card2").toggle("slow");
+        // })
+        // $("#btn3").click(function() {
+        //     $("#changeme").attr("class", "col-6");
+        //     $("#card3").css("width", "70rem");
+        // })
+        // $("#btn4").click(function() {
+        //     $("#card3").css("width", "20rem");
+        //     $("#changeme").attr("class", "col-4");
+        // })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

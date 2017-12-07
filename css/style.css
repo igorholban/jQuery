@@ -1,0 +1,74 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: olive;
+    padding: 30px;
+}
+
+#circle {
+    position: fixed;
+    top: 50px;
+    left: 30px;
+    width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.stema {
+    position: fixed;
+    top: 200px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/stema_big.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#doi {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+#trei {
+    position: fixed;
+    top: 150px;
+    left: 30px;
+    width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+#circle2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.square2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 20px;
+}
